@@ -53,7 +53,7 @@ group :development, :test do
   gem "brakeman", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
-  gem 'rubocop', require: false
+  gem "rubocop", require: false
   gem "rubocop-rails-omakase", require: false
 end
 
@@ -68,6 +68,5 @@ group :test do
   gem "selenium-webdriver"
 end
 gem "devise", "~> 4.9"
-gem 'kaminari'
+gem "kaminari"
 gem "sidekiq"
-

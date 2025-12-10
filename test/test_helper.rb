@@ -13,3 +13,7 @@ module ActiveSupport
     # Add more helper methods to be used by all tests here...
   end
 end
+
+ActiveSupport.on_load(:action_mailer) do
+  Rails.application.reload_routes_unless_loaded
+end

@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   end
 
   # Owner-side message management
-  resources :messages, only: [:update, :destroy]
+  resources :messages, only: [ :update, :destroy ]
 
   # Dashboard
   get "/dashboard", to: "static_pages#dashboard", as: :dashboard
