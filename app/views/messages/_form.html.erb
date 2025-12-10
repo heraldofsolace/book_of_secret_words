@@ -1,0 +1,41 @@
+<%= form_with(model: message,
+              url: user_message_path(@user.username),
+              class: "space-y-6") do |form| %>
+
+  <% if message.errors.any? %>
+    <div class="rounded-xl border border-red-500/40 bg-red-500/10 p-4 text-red-200 shadow-md shadow-red-900/30">
+      <h2 class="text-sm font-semibold mb-2">
+        <%= pluralize(message.errors.count, "error") %> prevented your message from being sent:
+      </h2>
+
+      <ul class="list-disc ml-5 space-y-1 text-sm">
+        <% message.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- Body input -->
+  <div class="space-y-2">
+    <%= form.label :body, "Your message",
+                   class: "text-sm font-medium text-slate-200" %>
+
+    <%= form.text_area :body,
+                       rows: 4,
+                       placeholder: "Say something anonymously…",
+                       class: [
+                         "w-full rounded-xl bg-slate-900/60 border px-4 py-3 text-slate-100 placeholder-slate-500 shadow-sm transition focus:ring-2 focus:ring-rose-400/40 focus:border-rose-400",
+                         message.errors[:body].any? ?
+                           "border-red-500/60 focus:ring-red-400/40 focus:border-red-400" :
+                           "border-slate-700"
+                       ] %>
+  </div>
+
+  <!-- Submit button -->
+  <div>
+    <%= form.submit "Send message",
+                    class: "w-full sm:w-auto rounded-xl bg-gradient-to-r from-red-500 to-rose-500 px-5 py-3 font-semibold text-white shadow-lg shadow-red-500/30 hover:brightness-110 cursor-pointer transition" %>
+  </div>
+
+<% end %>

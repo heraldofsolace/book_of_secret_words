@@ -1,0 +1,54 @@
+<h2 class="text-3xl font-semibold mb-8 bg-gradient-to-r from-rose-400 to-red-400 bg-clip-text text-transparent">
+  Change your password
+</h2>
+
+<%= form_for(
+      resource,
+      as: resource_name,
+      url: password_path(resource_name),
+      html: { method: :put, class: "space-y-6 max-w-md" }
+    ) do |f| %>
+
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.hidden_field :reset_password_token %>
+
+  <!-- New password -->
+  <div class="flex flex-col space-y-1">
+    <%= f.label :password, "New password", class: "text-sm font-medium text-slate-300" %>
+
+    <% if @minimum_password_length %>
+      <span class="text-[11px] text-slate-500 mb-1">
+        (<%= @minimum_password_length %> characters minimum)
+      </span>
+    <% end %>
+
+    <%= f.password_field :password,
+                         autofocus: true,
+                         autocomplete: "new-password",
+                         class: "rounded-xl bg-slate-800/50 border border-slate-700 px-4 py-3 text-slate-100 placeholder:text-slate-500
+          focus:border-rose-400 focus:ring-2 focus:ring-rose-400/30 outline-none transition" %>
+  </div>
+
+  <!-- Confirm password -->
+  <div class="flex flex-col space-y-1">
+    <%= f.label :password_confirmation, "Confirm new password", class: "text-sm font-medium text-slate-300" %>
+
+    <%= f.password_field :password_confirmation,
+                         autocomplete: "new-password",
+                         class: "rounded-xl bg-slate-800/50 border border-slate-700 px-4 py-3 text-slate-100 placeholder:text-slate-500
+          focus:border-rose-400 focus:ring-2 focus:ring-rose-400/30 outline-none transition" %>
+  </div>
+
+  <!-- Button -->
+  <div class="pt-2">
+    <%= f.submit "Change my password",
+                 class: "w-full sm:w-auto rounded-xl bg-gradient-to-r from-red-500 to-rose-500 py-3 px-6 font-semibold text-white shadow-lg shadow-red-500/30
+          transition hover:brightness-110 cursor-pointer" %>
+  </div>
+
+<% end %>
+
+<div class="mt-6">
+  <%= render "devise/shared/links" %>
+</div>

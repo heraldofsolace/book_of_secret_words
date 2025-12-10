@@ -1,0 +1,199 @@
+<!-- Hero -->
+<section class="flex flex-col items-center gap-12 lg:flex-row lg:items-start">
+  <!-- Left: copy -->
+  <div class="max-w-xl space-y-7">
+    <div class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/70 px-3 py-1 text-xs text-slate-300">
+      <span class="inline-flex h-1.5 w-1.5 rounded-full bg-rose-400"></span>
+      Anonymous messages. Zero pressure. Just the truth.
+    </div>
+
+    <div class="space-y-4">
+      <h1 class="text-4xl font-semibold tracking-tight text-slate-50 sm:text-5xl lg:text-6xl">
+        Collect honest, anonymous
+        <span class="bg-gradient-to-r from-rose-400 via-red-400 to-orange-400 bg-clip-text text-transparent">
+                    secret words
+                </span>
+        from anyone.
+      </h1>
+      <p class="text-base text-slate-300 sm:text-lg">
+        Create your own secret page and share the link. Friends, followers, and strangers can send you
+        anonymous messages—no sign up required on their end, full control on yours.
+      </p>
+    </div>
+
+    <%= link_to "Create my secret page", new_user_registration_path,
+                class: "inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-red-500 to-rose-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-red-500/30 transition hover:brightness-110"
+    %>
+  </div>
+
+  <!-- Right: mockup -->
+  <div class="w-full max-w-md lg:ml-auto">
+    <div class="relative mx-auto mt-4 w-full max-w-sm rounded-[2rem] border border-slate-800 bg-slate-900/80 p-4 shadow-2xl shadow-red-900/60 backdrop-blur-lg">
+
+      <div class="space-y-3 text-xs">
+        <!-- Card 1 -->
+        <div class="rounded-xl border border-slate-800 bg-slate-900/80 p-3">
+          <div class="mb-1 flex items-center justify-between text-[10px] text-slate-500">
+            <span>Anonymous · 2 min ago</span>
+            <span class="rounded-full bg-red-500/10 px-2 py-0.5 text-[10px] text-red-300">
+                            Kind
+                        </span>
+          </div>
+          <p class="text-slate-100">
+            You’re way more inspiring than you think. Please don’t stop creating. 💌
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl border border-slate-800 bg-slate-900/80 p-3">
+          <div class="mb-1 flex items-center justify-between text-[10px] text-slate-500">
+            <span>Anonymous · 15 min ago</span>
+            <span class="rounded-full bg-rose-500/10 px-2 py-0.5 text-[10px] text-rose-300">
+                            Honest
+                        </span>
+          </div>
+          <p class="text-slate-100">
+            Your feedback sessions help a lot, but some of us are too shy to say it.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl border border-dashed border-slate-700/80 bg-slate-900/40 p-3 text-slate-400">
+          <p>
+            Want to see more? Create your own secret page to start receiving anonymous messages
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-4 flex items-center justify-between text-[10px] text-slate-500">
+        <button class="rounded-full border border-slate-700 px-2 py-1 text-[10px] text-slate-300">
+          View my page →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how-it-works" class="mt-20 space-y-8">
+  <div class="flex items-end justify-between gap-4">
+    <div>
+      <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">How it works</h2>
+      <p class="mt-2 text-sm text-slate-400">
+        Three simple steps to start collecting anonymous messages that actually feel safe.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-3">
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-red-500/20 text-sm text-red-300">
+        1
+      </div>
+      <h3 class="text-sm font-semibold text-slate-50">Create your secret page</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        Sign up with your email and instantly get a unique, unguessable link that belongs only to you.
+      </p>
+    </div>
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-rose-500/20 text-sm text-rose-300">
+        2
+      </div>
+      <h3 class="text-sm font-semibold text-slate-50">Share it anywhere</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        Drop your link on Instagram, X, WhatsApp, classroom slides, or send it directly to friends.
+      </p>
+    </div>
+    <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+      <div class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-orange-500/20 text-sm text-orange-300">
+        3
+      </div>
+      <h3 class="text-sm font-semibold text-slate-50">Read & manage your inbox</h3>
+      <p class="mt-2 text-sm text-slate-400">
+        Messages arrive in real time. Pin your favorites, archive the rest, and delete anything abusive.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="mt-20 space-y-8">
+  <div class="flex items-end justify-between gap-4">
+    <div>
+      <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">Built for safety & control</h2>
+      <p class="mt-2 text-sm text-slate-400">
+        Not just anonymous—healthy, moderated, and under your control.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="space-y-4">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+        <h3 class="text-sm font-semibold text-slate-50">Show the world</h3>
+        <p class="mt-2 text-sm text-slate-400">
+          Choose messages to pin publicly on your page, so everyone can see the love.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+        <h3 class="text-sm font-semibold text-slate-50">No phone, no problem</h3>
+        <p class="mt-2 text-sm text-slate-400">
+          Designed for web first. Log in from any device.
+        </p>
+      </div>
+    </div>
+    <div class="space-y-4">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+        <h3 class="text-sm font-semibold text-slate-50">Anonymous by default</h3>
+        <p class="mt-2 text-sm text-slate-400">
+          Senders don’t need accounts. We never reveal IPs or identity to you or to others.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="mt-20 space-y-6">
+  <div>
+    <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">FAQ</h2>
+    <p class="mt-2 text-sm text-slate-400">
+      A few quick answers before you share your link with the world.
+    </p>
+  </div>
+
+  <div class="space-y-3 text-sm">
+    <details class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+      <summary class="flex cursor-pointer items-center justify-between gap-4">
+        <span class="font-medium text-slate-50">Can I see who sent the message?</span>
+        <span class="text-xs text-slate-500 group-open:hidden">+</span>
+        <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+      </summary>
+      <p class="mt-3 text-slate-400">
+        No. Messages are truly anonymous. We don’t show you names, emails, or any identifying info.
+      </p>
+    </details>
+
+    <details class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+      <summary class="flex cursor-pointer items-center justify-between gap-4">
+        <span class="font-medium text-slate-50">What about harassment or hate?</span>
+        <span class="text-xs text-slate-500 group-open:hidden">+</span>
+        <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+      </summary>
+      <p class="mt-3 text-slate-400">
+        You can instantly delete messages.
+      </p>
+    </details>
+
+    <details class="group rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+      <summary class="flex cursor-pointer items-center justify-between gap-4">
+        <span class="font-medium text-slate-50">Is it free?</span>
+        <span class="text-xs text-slate-500 group-open:hidden">+</span>
+        <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+      </summary>
+      <p class="mt-3 text-slate-400">
+        Yes, the core experience is free. We’ll offer optional pro features later.
+      </p>
+    </details>
+  </div>
+</section>

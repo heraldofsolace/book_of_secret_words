@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/build_info" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/doc/ruby-lsp-0.26.4" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/extensions/x86_64-linux/3.3.0/bcrypt-3.1.20" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/extensions/x86_64-linux/3.3.0/rbs-3.9.5" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/bcrypt-3.1.20" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/bcrypt_pbkdf-1.1.2/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/devise-4.9.4" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/orm_adapter-0.5.0" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/rack-2.2.21" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/railties-8.1.1/lib/rails/generators/rails/plugin/templates/app" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/railties-8.1.1/lib/rails/generators/rails/plugin/templates/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/rbs-3.9.5" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/responders-3.2.0" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/ruby-lsp-0.26.4" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/ruby-lsp-rails-0.4.8" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/warden-1.2.9" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/postgres" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/process-compose" />
+      <excludeFolder url="file://$MODULE_DIR$/app/assets/builds/tailwind" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp/sockets" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/doc/mechanize-1.0.0" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/doc/watchman-0.1.1" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/mechanize-1.0.0" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv/state/.bundle/ruby/3.3.0/gems/watchman-0.1.1" />
+      <excludeFolder url="file://$MODULE_DIR$/.devenv" />
+      <excludeFolder url="file://$MODULE_DIR$/.direnv" />
+      <excludeFolder url="file://$MODULE_DIR$/.kamal" />
+      <excludeFolder url="file://$MODULE_DIR$/.ruby-lsp" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+    </content>
+    <orderEntry type="jdk" jdkName="ruby-3.3.5-p100" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.20, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.3.0, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v3.40.0, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.9.4, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.2.2, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.2.2, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-activerecord (v1.2.2, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari-core (v1.2.2, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.4, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.1, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.11, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-3.3.5-p100) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, ruby-3.3.5-p100) [gem]" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="0" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
+  </component>
+  <component name="RailsPaths" isManagedAutomatically="true">
+    <entry key="app">
+      <value>file://$MODULE_DIR$/app</value>
+    </entry>
+    <entry key="app/assets">
+      <value>file://$MODULE_DIR$/app/assets</value>
+    </entry>
+    <entry key="app/channels">
+      <value>file://$MODULE_DIR$/app/channels</value>
+    </entry>
+    <entry key="app/controllers">
+      <value>file://$MODULE_DIR$/app/controllers</value>
+    </entry>
+    <entry key="app/helpers">
+      <value>file://$MODULE_DIR$/app/helpers</value>
+    </entry>
+    <entry key="app/mailers">
+      <value>file://$MODULE_DIR$/app/mailers</value>
+    </entry>
+    <entry key="app/models">
+      <value>file://$MODULE_DIR$/app/models</value>
+    </entry>
+    <entry key="app/views">
+      <value>file://$MODULE_DIR$/app/views</value>
+    </entry>
+    <entry key="config">
+      <value>file://$MODULE_DIR$/config</value>
+    </entry>
+    <entry key="config/cable">
+      <value>file://$MODULE_DIR$/config/cable.yml</value>
+    </entry>
+    <entry key="config/cache">
+      <value>file://$MODULE_DIR$/config/cache.yml</value>
+    </entry>
+    <entry key="config/database">
+      <value>file://$MODULE_DIR$/config/database.yml</value>
+    </entry>
+    <entry key="config/environment">
+      <value>file://$MODULE_DIR$/config/environment.rb</value>
+    </entry>
+    <entry key="config/environments">
+      <value>file://$MODULE_DIR$/config/environments</value>
+    </entry>
+    <entry key="config/initializers">
+      <value>file://$MODULE_DIR$/config/initializers</value>
+    </entry>
+    <entry key="config/locales">
+      <value>file://$MODULE_DIR$/config/locales</value>
+    </entry>
+    <entry key="config/routes">
+      <value>file://$MODULE_DIR$/config/routes</value>
+    </entry>
+    <entry key="config/routes.rb">
+      <value>file://$MODULE_DIR$/config/routes.rb</value>
+    </entry>
+    <entry key="config/solid_cache">
+      <value>file://$MODULE_DIR$/config/solid_cache.yml</value>
+    </entry>
+    <entry key="db">
+      <value>file://$MODULE_DIR$/db</value>
+    </entry>
+    <entry key="db/migrate">
+      <value>file://$MODULE_DIR$/db/migrate</value>
+    </entry>
+    <entry key="db/seeds.rb">
+      <value>file://$MODULE_DIR$/db/seeds.rb</value>
+    </entry>
+    <entry key="lib">
+      <value>file://$MODULE_DIR$/lib</value>
+    </entry>
+    <entry key="lib/assets">
+      <value>file://$MODULE_DIR$/lib/assets</value>
+    </entry>
+    <entry key="lib/tasks">
+      <value>file://$MODULE_DIR$/lib/tasks</value>
+    </entry>
+    <entry key="lib/templates">
+      <value>file://$MODULE_DIR$/lib/templates</value>
+    </entry>
+    <entry key="log">
+      <value>file://$MODULE_DIR$/log/development.log</value>
+    </entry>
+    <entry key="public">
+      <value>file://$MODULE_DIR$/public</value>
+    </entry>
+    <entry key="public/javascripts">
+      <value>file://$MODULE_DIR$/public/javascripts</value>
+    </entry>
+    <entry key="public/stylesheets">
+      <value>file://$MODULE_DIR$/public/stylesheets</value>
+    </entry>
+    <entry key="test/mailers/previews">
+      <value>file://$MODULE_DIR$/test/mailers/previews</value>
+      <value>file://$MODULE_DIR$/test/mailers/previews</value>
+    </entry>
+    <entry key="tmp">
+      <value>file://$MODULE_DIR$/tmp</value>
+    </entry>
+    <entry key="vendor">
+      <value>file://$MODULE_DIR$/vendor</value>
+    </entry>
+    <entry key="vendor/assets">
+      <value>file://$MODULE_DIR$/vendor/assets</value>
+    </entry>
+  </component>
+</module>

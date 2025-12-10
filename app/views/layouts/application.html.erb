@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= content_for(:title) || "Book Of Thousand Words" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Book Of Thousand Words">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+</head>
+
+<body class="bg-slate-900 text-slate-50">
+<!-- BG gradients -->
+<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+  <div class="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-rose-500/20 blur-3xl"></div>
+  <div class="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-red-500/20 blur-3xl"></div>
+</div>
+
+<header class="border-b border-slate-800/60 bg-slate-950/70 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2">
+      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-red-500 to-rose-500">
+        <span class="text-lg font-semibold text-white">B</span>
+      </div>
+      <div class="flex flex-col leading-tight">
+                    <span class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
+                        book of
+                    </span>
+        <span class="text-base font-semibold text-slate-50">
+                        secret words
+                    </span>
+      </div>
+    </a>
+
+    <!-- Nav -->
+    <nav class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+      <a href="#how-it-works" class="transition hover:text-slate-50">How it works</a>
+      <a href="#features" class="transition hover:text-slate-50">Features</a>
+      <a href="#faq" class="transition hover:text-slate-50">FAQ</a>
+    </nav>
+
+    <!-- Auth actions -->
+    <div class="flex items-center gap-3">
+      <%= link_to "Log in", new_user_session_path, class: "transition hover:text-slate-50" %>
+      <%= link_to "Sign up", new_user_registration_path, class: "inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-rose-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-red-500/30 transition hover:brightness-110" %>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 pb-24 pt-10 sm:px-6 lg:px-8 lg:pt-16">
+  <% if notice.present? %>
+    <div
+      class="mb-6 flex items-start gap-2 rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-4 py-2.5 text-emerald-200 shadow-md shadow-emerald-900/30 animate-fade-in"
+      data-controller="flash"
+    >
+      <svg class="h-4 w-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           viewBox="0 0 24 24">
+        <path d="M5 13l4 4L19 7" />
+      </svg>
+
+      <p class="text-sm leading-tight"><%= notice %></p>
+
+      <button data-action="click->flash#close"
+              class="ml-auto text-emerald-300 hover:text-emerald-100 transition text-xs">
+        ✕
+      </button>
+    </div>
+  <% end %>
+
+  <% if alert.present? %>
+    <div
+      class="mb-6 flex items-start gap-2 rounded-xl border border-red-500/40 bg-red-500/15 px-4 py-2.5 text-red-200 shadow-md shadow-red-900/30 animate-fade-in"
+      data-controller="flash"
+    >
+      <svg class="h-4 w-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           viewBox="0 0 24 24">
+        <path d="M12 9v2m0 4h.01M5.5 20h13l-6.5-17L5.5 20z" />
+      </svg>
+
+      <p class="text-sm leading-tight"><%= alert %></p>
+
+      <button data-action="click->flash#close"
+              class="ml-auto text-red-300 hover:text-red-100 transition text-xs">
+        ✕
+      </button>
+    </div>
+  <% end %>
+
+
+  <%= yield %>
+</main>
+</body>
+
+
+</html>
