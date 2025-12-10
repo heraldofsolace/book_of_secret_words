@@ -1,6 +1,6 @@
 class MessageMailer < ApplicationMailer
   # set a sensible default if you haven't already in ApplicationMailer
-  default from: "Book of Secret Words <no-reply@bookofsecretwords.example>"
+  default from: "info@bookofsecretwords.abhattacharyea.dev"
 
   def new_message_notification(user, message)
     @user    = user
