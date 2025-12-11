@@ -57,7 +57,7 @@
 
     <!-- Auth actions -->
     <div class="flex items-center gap-3">
-      <%= if user_sigend_in? %>
+      <% if user_signed_in? %>
         <%= link_to "Dashboard", dashboard_path, class: "transition hover:text-slate-50" %>
       <% else %>
         <%= link_to "Log in", new_user_session_path, class: "transition hover:text-slate-50" %>
